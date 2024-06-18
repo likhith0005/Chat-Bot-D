@@ -1,0 +1,86 @@
+<!-- blog/templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot App</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<h1>🤖 Chatbot App</h1>
+
+<div>
+    <div id="chatbot">
+        <p class="botText"><span>👋 Welcome</span></p>
+    </div>
+
+    <div id="userInput">
+        <input type="text" id="textInput" name="userMessage" placeholder="Type your message..."/>
+        <input type="submit" value="Send" id="buttonInput" />
+    </div>
+</div>
+
+<h2>Chat History</h2>
+<button id="getHistoryBtn">Get Chat History</button>
+<div id="chatHistory">
+    <!-- Chat history table will be appended here -->
+</div>
+
+<script>
+function getUserResponse() {
+    var userText = $('#textInput').val();
+    if (userText.trim() === "") {
+        return;  // Ignore empty input
+    }
+
+    var userHTML = "<p class='userText'>User: <span>" + userText + "</span></p>";
+    $('#textInput').val("");
+
+    $('#chatbot').append(userHTML);
+
+    $.get('/blog/getResponse', {userMessage: userText}).done(function(data) {
+        var returnedMessage = "<p class='botText'>Chatbot: <span>" + data + "</span></p>";
+        $('#chatbot').append(returnedMessage);
+
+        if (userText.toLowerCase() === "exit" || userText.toLowerCase() === "quit" || userText.toLowerCase() === "bye") {
+            $('#textInput').prop('disabled', true);
+            $('#buttonInput').prop('disabled', true);
+        }
+
+        // Append to chat history dynamically
+        var historyEntry = "<tr><td>" + new Date().toLocaleString() + "</td><td>" + userText + "</td><td>" + data + "</td></tr>";
+        $('#chatHistory table').append(historyEntry);
+
+    }).fail(function() {
+        alert("Error connecting to the server");
+    });
+}
+
+$('#buttonInput').click(function() {
+    getUserResponse();
+});
+
+$('#textInput').keypress(function(event) {
+    if (event.key === "Enter") {
+        getUserResponse();
+    }
+});
+
+$('#getHistoryBtn').click(function() {
+    $.get('/blog/chatHistory').done(function(data) {
+        $('#chatHistory').html(data);  // Replace chat history content with fetched data
+    }).fail(function() {
+        alert("Error fetching chat history");
+    });
+});
+</script>
+
+</body>
+</html>

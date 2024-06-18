@@ -1,0 +1,46 @@
+2024-06-12T08:27:46,567 Using pip 24.0 from C:\Users\91901\Dropbox\PC\Desktop\my__project\.venv\lib\site-packages\pip (python 3.10)
+2024-06-12T08:27:46,568 Non-user install because user site-packages disabled
+2024-06-12T08:27:46,631 Created temporary directory: C:\Users\91901\AppData\Local\Temp\pip-build-tracker-tz8d1sv4
+2024-06-12T08:27:46,631 Initialized build tracking at C:\Users\91901\AppData\Local\Temp\pip-build-tracker-tz8d1sv4
+2024-06-12T08:27:46,632 Created build tracker: C:\Users\91901\AppData\Local\Temp\pip-build-tracker-tz8d1sv4
+2024-06-12T08:27:46,632 Entered build tracker: C:\Users\91901\AppData\Local\Temp\pip-build-tracker-tz8d1sv4
+2024-06-12T08:27:46,633 Created temporary directory: C:\Users\91901\AppData\Local\Temp\pip-install-yx9b_lth
+2024-06-12T08:27:46,635 Created temporary directory: C:\Users\91901\AppData\Local\Temp\pip-ephem-wheel-cache-2yyds4ju
+2024-06-12T08:27:46,650 Requirement already satisfied: spacy==3.4.4 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (3.4.4)
+2024-06-12T08:27:46,694 Requirement already satisfied: spacy-legacy<3.1.0,>=3.0.10 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from spacy==3.4.4) (3.0.12)
+2024-06-12T08:27:46,696 Requirement already satisfied: spacy-loggers<2.0.0,>=1.0.0 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from spacy==3.4.4) (1.0.5)
+2024-06-12T08:27:46,698 Requirement already satisfied: murmurhash<1.1.0,>=0.28.0 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from spacy==3.4.4) (1.0.10)
+2024-06-12T08:27:46,700 Requirement already satisfied: cymem<2.1.0,>=2.0.2 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from spacy==3.4.4) (2.0.8)
+2024-06-12T08:27:46,702 Requirement already satisfied: preshed<3.1.0,>=3.0.2 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from spacy==3.4.4) (3.0.9)
+2024-06-12T08:27:46,705 Requirement already satisfied: thinc<8.2.0,>=8.1.0 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from spacy==3.4.4) (8.1.12)
+2024-06-12T08:27:46,706 Requirement already satisfied: wasabi<1.1.0,>=0.9.1 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from spacy==3.4.4) (0.10.1)
+2024-06-12T08:27:46,708 Requirement already satisfied: srsly<3.0.0,>=2.4.3 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from spacy==3.4.4) (2.4.8)
+2024-06-12T08:27:46,710 Requirement already satisfied: catalogue<2.1.0,>=2.0.6 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from spacy==3.4.4) (2.0.10)
+2024-06-12T08:27:46,713 Requirement already satisfied: typer<0.8.0,>=0.3.0 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from spacy==3.4.4) (0.7.0)
+2024-06-12T08:27:46,716 Requirement already satisfied: pathy>=0.3.5 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from spacy==3.4.4) (0.11.0)
+2024-06-12T08:27:46,719 Requirement already satisfied: smart-open<7.0.0,>=5.2.1 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from spacy==3.4.4) (6.4.0)
+2024-06-12T08:27:46,720 Requirement already satisfied: tqdm<5.0.0,>=4.38.0 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from spacy==3.4.4) (4.66.4)
+2024-06-12T08:27:46,722 Requirement already satisfied: numpy>=1.15.0 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from spacy==3.4.4) (1.26.4)
+2024-06-12T08:27:46,724 Requirement already satisfied: requests<3.0.0,>=2.13.0 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from spacy==3.4.4) (2.32.3)
+2024-06-12T08:27:46,725 Requirement already satisfied: pydantic!=1.8,!=1.8.1,<1.11.0,>=1.7.4 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from spacy==3.4.4) (1.7.4)
+2024-06-12T08:27:46,727 Requirement already satisfied: jinja2 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from spacy==3.4.4) (3.1.4)
+2024-06-12T08:27:46,729 Requirement already satisfied: setuptools in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from spacy==3.4.4) (70.0.0)
+2024-06-12T08:27:46,731 Requirement already satisfied: packaging>=20.0 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from spacy==3.4.4) (24.1)
+2024-06-12T08:27:46,765 Requirement already satisfied: langcodes<4.0.0,>=3.2.0 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from spacy==3.4.4) (3.4.0)
+2024-06-12T08:27:46,794 Requirement already satisfied: language-data>=1.2 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from langcodes<4.0.0,>=3.2.0->spacy==3.4.4) (1.2.0)
+2024-06-12T08:27:46,819 Requirement already satisfied: pathlib-abc==0.1.1 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from pathy>=0.3.5->spacy==3.4.4) (0.1.1)
+2024-06-12T08:27:46,837 Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from requests<3.0.0,>=2.13.0->spacy==3.4.4) (3.3.2)
+2024-06-12T08:27:46,840 Requirement already satisfied: idna<4,>=2.5 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from requests<3.0.0,>=2.13.0->spacy==3.4.4) (3.7)
+2024-06-12T08:27:46,841 Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from requests<3.0.0,>=2.13.0->spacy==3.4.4) (2.2.1)
+2024-06-12T08:27:46,843 Requirement already satisfied: certifi>=2017.4.17 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from requests<3.0.0,>=2.13.0->spacy==3.4.4) (2024.6.2)
+2024-06-12T08:27:46,916 Requirement already satisfied: blis<0.8.0,>=0.7.8 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from thinc<8.2.0,>=8.1.0->spacy==3.4.4) (0.7.11)
+2024-06-12T08:27:46,918 Requirement already satisfied: confection<1.0.0,>=0.0.1 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from thinc<8.2.0,>=8.1.0->spacy==3.4.4) (0.1.5)
+2024-06-12T08:27:46,932 Requirement already satisfied: colorama in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from tqdm<5.0.0,>=4.38.0->spacy==3.4.4) (0.4.6)
+2024-06-12T08:27:46,953 Requirement already satisfied: click<9.0.0,>=7.1.1 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from typer<0.8.0,>=0.3.0->spacy==3.4.4) (8.1.7)
+2024-06-12T08:27:46,966 Requirement already satisfied: MarkupSafe>=2.0 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from jinja2->spacy==3.4.4) (2.1.5)
+2024-06-12T08:27:47,050 Requirement already satisfied: marisa-trie>=0.7.7 in c:\users\91901\dropbox\pc\desktop\my__project\.venv\lib\site-packages (from language-data>=1.2->langcodes<4.0.0,>=3.2.0->spacy==3.4.4) (1.2.0)
+2024-06-12T08:27:47,080 Created temporary directory: C:\Users\91901\AppData\Local\Temp\pip-unpack-iw6bu8af
+2024-06-12T08:27:47,260 Remote version of pip: 24.0
+2024-06-12T08:27:47,262 Local version of pip:  24.0
+2024-06-12T08:27:47,262 Was pip installed by pip? True
+2024-06-12T08:27:47,263 Removed build tracker: 'C:\\Users\\91901\\AppData\\Local\\Temp\\pip-build-tracker-tz8d1sv4'
